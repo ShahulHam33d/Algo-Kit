@@ -29,9 +29,15 @@ Repeat these steps until convergence or a stopping criterion is met.
 This is one way to find the best values for m and b. But when using Ordinary Least Squares (OLS), there's a closed-form solution that avoids the iterative process of gradient descent.
 To find mmm and b using OLS, you can use these formulas:
 For m (slope):
+
 m = (mean(xy) - mean(x) × mean(y)) / (mean(x²) - (mean(x))²) 
+
 For b (intercept):
+
 b = mean(y) - m × mean(x) 
+
 There's a more formal version of this using summation notation, but I prefer sticking with the mean notation since it's simpler. All we need is these two formulas and apply in it another formula for prediction.
+
 prediction (y):
+
 y = mx + b
